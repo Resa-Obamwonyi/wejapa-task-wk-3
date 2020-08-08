@@ -1,25 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Form</title>
+</head>
+
 <?php
  if ($_SERVER['REQUEST_METHOD'] == 'POST')
  {
- 	$name = $_POST['name'];
- 	$email= $_POST['email'];
- 	$age = $_POST['age'];
- 	$role = $_POST['devrole'];
- 	$workmode=  $_POST['workmode'];
- 	$comments = $_POST['comments'];
-
-
- 	//Output
-
- 	 echo '<h3 style="text-align:left; color:White; padding:20px;">Hello,<br> 
- 	  My name is '.$name.'. <br>
- 	  I am a '.$role.'. I am '.$age.' years old. <br> </h3>';
- 	 
- 	 echo '<h3 style="text-align:left; color:White; padding:20px;">
- 	  Work Mode: '.$workmode.'<br> 
- 	  Email: '.$email.'<br>
- 	  Additional Comments: '.$comments.'<br> 
- 	  </h3>';
+ 	$fname = $_POST['first_name'];
+ 	$lname = $_POST['last_name'];
+ 	$email = $_POST['email'];
+ 	$dob = $_POST['date_of_birth'];
+ 	$color = $_POST['fav_color'];
+ 	$gender = $_POST['gender'];
+ 	$dept= $_POST['department'];
+ 	$password= $_POST['password'];
    }
- 
+  
 ?>
+<body style="background-color:<?php echo $color ?>">
+<h2><?php echo $fname." ". $lname ?></h2>
+<h3><?php echo $email ?></h3>
+<h3><?php echo $dob ?></h3>
+<h3><?php echo $gender ?></h3>
+<h3><?php echo $dept ?></h3>
+</body>
+</html>

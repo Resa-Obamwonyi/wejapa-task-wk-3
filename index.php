@@ -1,6 +1,4 @@
 
-<?php require_once('welcome.php'); ?>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +13,7 @@
             <h1>Sign Up Form</h1>
         </div>
         <div class="form-section">
-            <form action=" " method="POST" id="survey-form" enctype="multipart/form-data">
+            <form action="welcome.php" method="POST" enctype="multipart/form-data">
                     <div>
                         <p>First Name:</p>
                         <input type="text" name="first_name" class="form-input" >
